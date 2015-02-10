@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>♥ Dominique Strauss Khan ♥</title>
+    <!--<meta http-equiv="refresh" content="10; URL=/">-->
+    <meta charset="utf-8">
+    <style type="text/css">
+      body { background-color: pink; color: purple; font-family: Comic Sans, Comic Sans MS, cursive; text-align: center }
+      #pic img { max-height: 1000px; max-width: 1000px; }
+      #cornifycount { display: none }
+    </style>
+  </head>
+  <body>
+    <h1><marquee scrollamount="13">♥ ♥ Dominique ♥ Strauss ♥ Khan ♥ ♥</marquee></h1>
+    <div id="quote"></div>
+    <div id="pic"></div>
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/ObPsIckcKQM?rel=0&autoplay=1&start=4" frameborder="0" allowfullscreen></iframe>
+    <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+    <script type="text/javascript">
+      var raaandom = function(min, max) {
+        if (max == null) {
+          max = min;
+          min = 0;
+        }
+        return min + Math.floor(Math.random() * (max - min + 1));
+      };
+
+     var apwalDansLaDoucheDuSofitel = function() {
+       var picContainer = document.getElementById("pic");
+       var randPic = raaandom(1, 13);
+       var selfie = document.createElement("img");
+       selfie.src = "selfies/" + randPic + ".jpg";
+       picContainer.innerHTML = "";
+       picContainer.appendChild(selfie);
+       cornify_add()
+     }
+     apwalDansLaDoucheDuSofitel();
+     setInterval(apwalDansLaDoucheDuSofitel, 10000);
+    </script>
+  </body>
+</html>
